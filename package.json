@@ -18,7 +18,7 @@
     "optimize:raster": "node scripts/sharp.js",
     "optimize:vector": "node scripts/svgo.js",
     "optimize:all": "node scripts/svgo.js && node scripts/sharp.js",
-    "create-sprite": "node scripts/sprite.js",
+    "create-sprite": "node scripts/sprite.js && svg-sprite --config sprite.config.json public/img/icons/*.svg",
     "fonts": "node scripts/convert-fonts.js",
     "deploy": "gh-pages -d dist"
   },
@@ -56,6 +56,7 @@
     "sass": "^1.84.0",
     "sharp": "^0.33.5",
     "styled-components": "^6.1.15",
+    "svg-sprite": "^2.0.4",
     "svgo": "^3.3.2",
     "swiper": "^11.2.3",
     "ttf2woff": "^3.0.0",

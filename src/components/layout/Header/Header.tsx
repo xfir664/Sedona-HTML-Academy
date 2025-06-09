@@ -34,7 +34,7 @@ export default function Header() {
         <MainNav></MainNav>
         <StyledSearchBtn className="btn">
           <svg>
-            <use href="#search"></use>
+            <use href="sprite/sprite.svg#dark-mode"></use>
           </svg>
         </StyledSearchBtn>
         <StyledMyBtn className="btn btn--base">Хочу сюда!</StyledMyBtn>

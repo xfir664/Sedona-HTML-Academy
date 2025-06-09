@@ -1,0 +1,15 @@
+{
+  "dest": "public/sprite",
+  "mode": {
+    "symbol": {
+      "dest": ".",
+      "sprite": "sprite.svg",
+      "example": false
+    }
+  },
+  "shape": {
+    "id": {
+      "generator": "%s"
+    }
+  }
+}
