@@ -14,18 +14,5 @@ export default {
         },
       },
     },
-    "removeDimensions",
-    {
-      name: "removeAttrs",
-      params: {
-        attrs: "(fill)",
-      },
-    },
-    {
-      name: "addAttributesToSVGElement",
-      params: {
-        attributes: [{ fill: "currentColor" }],
-      },
-    },
   ],
 };

@@ -1,0 +1,67 @@
+@use "./../variables.scss" as var;
+
+$size-mob: 18px;
+$size-tablet: 18px;
+$size-desctop: 18px;
+
+$height-mob: 24px;
+$height-tablet: 24px;
+$height-desctop: 24px;
+
+$col-base: #000000;
+$col-hover-base: rgba($col-base, 1);
+$col-focus-base: rgba($col-base, 1);
+$col-active-base: rgba($col-base, 1);
+$col-placeholder-base: rgba($col-base, 0.6);
+$col-disabled-base: #000000;
+
+$bg-base: #f2f2f2;
+$bg-hover-base: #e6e6e6;
+$bg-focus-base: #e6e6e6;
+$bg-active-base: #f2f2f2;
+$bg-disabled-base: #e5e5e5;
+
+$col-primary: #000000;
+$col-hover-primary: rgba($col-primary, 1);
+$col-focus-primary: rgba($col-primary, 1);
+$col-active-primary: rgba($col-primary, 1);
+$col-placeholder-primary: rgba($col-primary, 0.6);
+$col-disabled-primary: #000000;
+
+$bg-primary: #f2f2f2;
+$bg-hover-primary: #e6e6e6;
+$bg-focus-primary: #e6e6e6;
+$bg-active-primary: #f2f2f2;
+$bg-disabled-primary: #e5e5e5;
+
+$col-secondary: #000000;
+$col-hover-secondary: rgba($col-secondary, 1);
+$col-focus-secondary: rgba($col-secondary, 1);
+$col-active-secondary: rgba($col-secondary, 1);
+$col-placeholder-secondary: rgba($col-secondary, 0.6);
+$col-disabled-secondary: #000000;
+
+$bg-secondary: #f2f2f2;
+$bg-hover-secondary: #e6e6e6;
+$bg-focus-secondary: #e6e6e6;
+$bg-active-secondary: #f2f2f2;
+$bg-disabled-secondary: #e5e5e5;
+
+:root {
+  --input-size: #{$size-mob};
+  --input-height: #{$height-mob};
+}
+
+@media (min-width: var.$tablet-width) {
+  :root {
+    --input-size: #{$size-tablet};
+    --input-height: #{$height-tablet};
+  }
+}
+
+@media (min-width: var.$desctop-width) {
+  :root {
+    --input-size: #{$size-desctop};
+    --input-height: #{$height-desctop};
+  }
+}

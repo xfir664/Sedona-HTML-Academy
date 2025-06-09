@@ -1,0 +1,26 @@
+@use "mixsins";
+
+$font-base: "PTSans";
+$font-primary: "PTSans";
+$font-secondary: "PTSans";
+
+@include mixsins.font-face(
+  $font-base,
+  "fonts/PTSans/ptsans-regular",
+  400,
+  normal,
+  (woff2 woff ttf)
+);
+@include mixsins.font-face(
+  $font-base,
+  "fonts/PTSans/ptsans-bold",
+  700,
+  normal,
+  (woff2 woff ttf)
+);
+
+:root {
+  --font-base: #{$font-base}, "Arial", "sans-serif";
+  --font-primary: #{$font-primary}, "Arial", "sans-serif";
+  --font-secondary: #{$font-secondary}, "Arial", "sans-serif";
+}

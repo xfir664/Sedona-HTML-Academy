@@ -1,0 +1,58 @@
+@use "./../variables.scss" as var;
+
+$size-mob: 16px;
+$size-tablet: 16px;
+$size-desctop: 16px;
+
+$height-mob: 21px;
+$height-tablet: 21px;
+$height-desctop: 21px;
+
+$col-base: #ffffff;
+$col-hover-base: rgba($col-base, 0.6);
+$col-focus-base: rgba($col-base, 1);
+$col-active-base: rgba($col-base, 0.3);
+
+$bg-base: transparent;
+$bg-hover-base: transparent;
+$bg-focus-base: transparent;
+$bg-active-base: transparent;
+
+$col-primary: #ffffff;
+$col-hover-primary: rgba($col-primary, 0.6);
+$col-focus-primary: rgba($col-primary, 1);
+$col-active-primary: rgba($col-primary, 0.3);
+
+$bg-primary: transparent;
+$bg-hover-primary: transparent;
+$bg-focus-primary: transparent;
+$bg-active-primary: transparent;
+
+$col-secondary: #ffffff;
+$col-hover-secondary: rgba($col-secondary, 0.6);
+$col-focus-secondary: rgba($col-secondary, 1);
+$col-active-secondary: rgba($col-secondary, 0.3);
+
+$bg-secondary: transparent;
+$bg-hover-secondary: transparent;
+$bg-focus-secondary: transparent;
+$bg-active-secondary: transparent;
+
+:root {
+  --link-size: #{$size-mob};
+  --link-height: #{$height-mob};
+}
+
+@media (min-width: var.$tablet-width) {
+  :root {
+    --link-size: #{$size-tablet};
+    --link-height: #{$height-tablet};
+  }
+}
+
+@media (min-width: var.$desctop-width) {
+  :root {
+    --link-size: #{$size-desctop};
+    --link-height: #{$height-desctop};
+  }
+}

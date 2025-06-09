@@ -36,7 +36,8 @@ function cleanSVGContent(content, id) {
     .replace(/<\?xml.*?\?>/g, "") // Удаляем <?xml ... ?>宣言
     .replace(/<!DOCTYPE.*?>/g, "") // Удаляем <!DOCTYPE ... >
     .replace(/<svg[^>]*>/, `<symbol id="${id}" viewBox="0 0 24 24">`) // Заменяем <svg> на <symbol>
-    .replace("</svg>", "</symbol>"); // Заменяем </svg> на </symbol>
+    .replace("</svg>", "</symbol>") // Заменяем </svg> на </symbol>
+    .replace(/fill=".*?"/g, 'fill="currentColor"'); // Заменяем все fill="..." на fill="currentColor"
 
   return svgContent;
 }

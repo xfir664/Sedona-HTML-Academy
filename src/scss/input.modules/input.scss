@@ -1,0 +1,97 @@
+@use "./input-var.scss" as input;
+
+.input {
+  padding: 0;
+  border: 0;
+  font-family: var(--font-base);
+  font-size: var(--input-size);
+  line-height: var(--input-height);
+  font-weight: 700;
+
+  &--base {
+    color: input.$col-base;
+    background-color: input.$bg-base;
+
+    &:hover {
+      color: input.$col-hover-base;
+      background-color: input.$bg-hover-base;
+    }
+
+    &:focus {
+      color: input.$col-focus-base;
+      background-color: input.$bg-focus-base;
+    }
+
+    &:active {
+      color: input.$col-active-base;
+      background-color: input.$bg-active-base;
+    }
+
+    &:disabled {
+      color: input.$col-disabled-base;
+      background-color: input.$bg-disabled-base;
+    }
+
+    &::placeholder {
+      color: input.$col-placeholder-base;
+    }
+  }
+
+  &--primary {
+    color: input.$col-primary;
+    background-color: input.$bg-primary;
+
+    &:hover {
+      color: input.$col-hover-primary;
+      background-color: input.$bg-hover-primary;
+    }
+
+    &:focus {
+      color: input.$col-focus-primary;
+      background-color: input.$bg-focus-primary;
+    }
+
+    &:active {
+      color: input.$col-active-primary;
+      background-color: input.$bg-active-primary;
+    }
+
+    &:disabled {
+      color: input.$col-disabled-primary;
+      background-color: input.$bg-disabled-primary;
+    }
+
+    &::placeholder {
+      color: input.$col-placeholder-primary;
+    }
+  }
+
+  &--secondary {
+    color: input.$col-secondary;
+    background-color: input.$bg-secondary;
+
+    &:hover {
+      color: input.$col-hover-secondary;
+      background-color: input.$bg-hover-secondary;
+    }
+
+    &:focus {
+      color: input.$col-focus-secondary;
+      background-color: input.$bg-focus-secondary;
+    }
+
+    &:active {
+      color: input.$col-active-secondary;
+      background-color: input.$bg-active-secondary;
+    }
+
+    &:disabled {
+      color: input.$col-disabled-secondary;
+      background-color: input.$bg-disabled-secondary;
+    }
+
+    &::placeholder {
+      color: input.$col-placeholder-secondary;
+    }
+  }
+}

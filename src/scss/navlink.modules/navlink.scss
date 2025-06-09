@@ -1,0 +1,67 @@
+@use "./navlink-var.scss" as navlink;
+
+.navlink {
+  font-size: var(--navlink-size);
+  line-height: var(--navlink-height);
+  text-decoration: none;
+
+  &--base {
+    color: navlink.$col-base;
+    background-color: navlink.$bg-base;
+
+    &:hover {
+      color: navlink.$col-hover-base;
+      background-color: navlink.$bg-hover-base;
+    }
+
+    &:focus {
+      color: navlink.$col-focus-base;
+      background-color: navlink.$bg-focus-base;
+    }
+
+    &:active {
+      color: navlink.$col-active-base;
+      background-color: navlink.$bg-active-base;
+    }
+  }
+
+  &--primary {
+    color: navlink.$col-primary;
+    background-color: navlink.$bg-primary;
+
+    &:hover {
+      color: navlink.$col-hover-primary;
+      background-color: navlink.$bg-hover-primary;
+    }
+
+    &:focus {
+      color: navlink.$col-focus-primary;
+      background-color: navlink.$bg-focus-primary;
+    }
+
+    &:active {
+      color: navlink.$col-active-primary;
+      background-color: navlink.$bg-active-primary;
+    }
+  }
+
+  &--secondary {
+    color: navlink.$col-secondary;
+    background-color: navlink.$bg-secondary;
+
+    &:hover {
+      color: navlink.$col-hover-secondary;
+      background-color: navlink.$bg-hover-secondary;
+    }
+
+    &:focus {
+      color: navlink.$col-focus-secondary;
+      background-color: navlink.$bg-focus-secondary;
+    }
+
+    &:active {
+      color: navlink.$col-active-secondary;
+      background-color: navlink.$bg-active-secondary;
+    }
+  }
+}

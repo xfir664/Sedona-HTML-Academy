@@ -1,0 +1,67 @@
+@use "./link-var.scss" as link;
+
+.link {
+  font-size: var(--link-size);
+  line-height: var(--link-height);
+  text-decoration: none;
+
+  &--base {
+    color: link.$col-base;
+    background-color: link.$bg-base;
+
+    &:hover {
+      color: link.$col-hover-base;
+      background-color: link.$bg-hover-base;
+    }
+
+    &:focus {
+      color: link.$col-focus-base;
+      background-color: link.$bg-focus-base;
+    }
+
+    &:active {
+      color: link.$col-active-base;
+      background-color: link.$bg-active-base;
+    }
+  }
+
+  &--primary {
+    color: link.$col-primary;
+    background-color: link.$bg-primary;
+
+    &:hover {
+      color: link.$col-hover-primary;
+      background-color: link.$bg-hover-primary;
+    }
+
+    &:focus {
+      color: link.$col-focus-primary;
+      background-color: link.$bg-focus-primary;
+    }
+
+    &:active {
+      color: link.$col-active-primary;
+      background-color: link.$bg-active-primary;
+    }
+  }
+
+  &--secondary {
+    color: link.$col-secondary;
+    background-color: link.$bg-secondary;
+
+    &:hover {
+      color: link.$col-hover-secondary;
+      background-color: link.$bg-hover-secondary;
+    }
+
+    &:focus {
+      color: link.$col-focus-secondary;
+      background-color: link.$bg-focus-secondary;
+    }
+
+    &:active {
+      color: link.$col-active-secondary;
+      background-color: link.$bg-active-secondary;
+    }
+  }
+}

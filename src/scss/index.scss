@@ -1,2 +1,12 @@
-@import "./variables.scss";
-@import "./global.scss";
+@use "variables.scss";
+@use "colors-var.scss";
+@use "mixsins.scss";
+@use "fonts.scss";
+@use "global.scss";
+@use "./btn.modules/btn.scss";
+@use "./navlink.modules/navlink.scss";
+@use "./link.modules/link.scss";
+@use "./input.modules/input.scss";
+@use "./checkbox.modules/checkbox.scss";
+@use "./radio.modules/radio.scss";
+@use "./select.modules/select.scss";

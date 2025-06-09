@@ -1,0 +1,84 @@
+@use "btn-var.scss" as btn;
+
+.btn {
+  padding: 0;
+  border: 0;
+  font-size: var(--btn-size);
+  line-height: var(--btn-height);
+  cursor: pointer;
+
+  &--base {
+    background-color: btn.$bg-base;
+    color: btn.$col-base;
+
+    &:hover {
+      background-color: btn.$bg-hover-base;
+      color: btn.$col-hover-base;
+    }
+
+    &:focus {
+      background-color: btn.$bg-focus-base;
+      color: btn.$col-focus-base;
+    }
+
+    &:active {
+      background-color: btn.$bg-active-base;
+      color: btn.$col-active-base;
+    }
+
+    &:disabled {
+      background-color: btn.$bg-disabled-base;
+      color: btn.$col-disabled-base;
+    }
+  }
+
+  &--primary {
+    background-color: btn.$bg-primary;
+    color: btn.$col-primary;
+
+    &:hover {
+      background-color: btn.$bg-hover-primary;
+      color: btn.$col-hover-primary;
+    }
+
+    &:focus {
+      background-color: btn.$bg-focus-primary;
+      color: btn.$col-focus-primary;
+    }
+
+    &:active {
+      background-color: btn.$bg-active-primary;
+      color: btn.$col-active-primary;
+    }
+
+    &:disabled {
+      background-color: btn.$bg-disabled-primary;
+      color: btn.$col-disabled-primary;
+    }
+  }
+
+  &--secondary {
+    background-color: btn.$bg-secondary;
+    color: btn.$col-secondary;
+
+    &:hover {
+      background-color: btn.$bg-hover-secondary;
+      color: btn.$col-hover-secondary;
+    }
+
+    &:focus {
+      background-color: btn.$bg-focus-secondary;
+      color: btn.$col-focus-secondary;
+    }
+
+    &:active {
+      background-color: btn.$bg-active-secondary;
+      color: btn.$col-active-secondary;
+    }
+
+    &:disabled {
+      background-color: btn.$bg-disabled-secondary;
+      color: btn.$col-disabled-secondary;
+    }
+  }
+}

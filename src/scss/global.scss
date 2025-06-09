@@ -1,18 +1,150 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  max-width: $width;
+@use "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.box {
-  border: 1px solid blue;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  max-width: 300px;
+#root {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-base);
+  font-size: var(--text-size);
+  line-height: var(--text-height);
+  color: var(--text-col-base);
+  background: var(--bg-base);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: variables.$desctop-width;
+  background-color: var(--bg-primary);
+
+  @media (min-width: variables.$desctop-width) {
+    padding: 0;
+  }
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .title {
-  color: $red;
+  font-size: var(--title-size);
+  line-height: var(--title-height);
+
+  &--primary {
+    color: var(--title-col-primary);
+  }
+
+  &--secondary {
+    color: var(--title-col-secondary);
+  }
+}
+
+.subtitle {
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-height);
+
+  &--primary {
+    color: var(--subtitle-col-primary);
+  }
+
+  &--secondary {
+    color: var(--subtitle-col-secondary);
+  }
+}
+
+.description {
+  font-size: var(--decription-size);
+  line-height: var(--decription-height);
+
+  &--primary {
+    color: var(--description-col-primary);
+  }
+
+  &--secondary {
+    color: var(--description-col-secondary);
+  }
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.error {
+  color: var(--error-col-base);
+
+  &--primary {
+    color: var(--error-col-primary);
+  }
+
+  &--secondary {
+    color: var(--error-col-secondary);
+  }
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-column),
+    minmax(var(--grid-size), 1fr)
+  );
+  gap: var(--grid-gap);
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(
+      var(--grid-column),
+      minmax(var(--grid-size), 1fr)
+    );
+    gap: var(--grid-gap);
+  }
+
+  @media (min-width: variables.$desctop-width) {
+    grid-template-columns: repeat(
+      var(--grid-column),
+      minmax(auto, var(--grid-size))
+    );
+    gap: var(--grid-gap);
+  }
+}
+
+.grid-column-full {
+  grid-column: 1 / -1;
 }
