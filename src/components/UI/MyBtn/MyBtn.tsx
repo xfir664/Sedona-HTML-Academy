@@ -1,5 +1,5 @@
 type MyBtnType = Readonly<{
-  children?: string;
+  children?: any;
   className?: string;
   onClick?: () => any;
 }>;

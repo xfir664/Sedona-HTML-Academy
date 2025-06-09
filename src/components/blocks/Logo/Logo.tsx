@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const MyLogoWrapper = styled.p`
+const MyLogoWrapper = styled.div`
   margin-right: 30px;
   margin-bottom: -6px;
 `;
@@ -21,7 +21,7 @@ const MyLogoLink = styled(Link)`
 
 export default function Logo() {
   return (
-    <MyLogoWrapper className="logo m-0">
+    <MyLogoWrapper className="m-0">
       <MyLogoLink to="/">
         <img src={"./img/logo.svg"} alt="logo sedona" height={70} width={140} />
       </MyLogoLink>

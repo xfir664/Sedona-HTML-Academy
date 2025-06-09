@@ -21,12 +21,22 @@ const StyledMyBtn = styled(MyBtn)`
   transition: all ease 0.3s;
 `;
 
+const StyledSearchBtn = styled(MyBtn)`
+  padding: 22px 12px;
+  background-color: transparent;
+`;
+
 export default function Header() {
   return (
     <header className="grid-layout">
       <MyWrapper className="grid-column-full">
         <Logo></Logo>
         <MainNav></MainNav>
+        <StyledSearchBtn className="btn">
+          <svg>
+            <use href="#search"></use>
+          </svg>
+        </StyledSearchBtn>
         <StyledMyBtn className="btn btn--base">Хочу сюда!</StyledMyBtn>
       </MyWrapper>
     </header>

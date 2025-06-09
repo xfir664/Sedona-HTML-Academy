@@ -1,5 +1,6 @@
 {
   "name": "vite-react-js-template",
+  "homepage": "https://xfir664.github.io/Sedona-HTML-Academy/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,7 +19,8 @@
     "optimize:vector": "node scripts/svgo.js",
     "optimize:all": "node scripts/svgo.js && node scripts/sharp.js",
     "create-sprite": "node scripts/sprite.js",
-    "fonts": "node scripts/convert-fonts.js"
+    "fonts": "node scripts/convert-fonts.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -27,16 +29,19 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@reduxjs/toolkit": "^2.8.2",
+    "@spiriit/vite-plugin-svg-spritemap": "^4.1.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
     "axios": "^1.7.9",
+    "cheerio": "^1.1.0",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "fs-extra": "^11.3.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "localforage": "^1.10.0",
     "msw": "^2.9.0",
@@ -57,6 +62,7 @@
     "typescript": "^5.8.3",
     "vite": "^6.1.0",
     "vite-plugin-checker": "^0.9.3",
+    "vite-plugin-svg-spritemap": "^1.0.12",
     "vite-plugin-svgo": "^1.6.2"
   }
 }
