@@ -6,14 +6,14 @@ $font-secondary: "PTSans";
 
 @include mixsins.font-face(
   $font-base,
-  "./fonts/PTSans/ptsans-regular",
+  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-regular",
   400,
   normal,
   (woff2 woff ttf)
 );
 @include mixsins.font-face(
   $font-base,
-  "./fonts/PTSans/ptsans-bold",
+  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-bold",
   700,
   normal,
   (woff2 woff ttf)

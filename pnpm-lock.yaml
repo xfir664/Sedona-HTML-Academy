@@ -22,6 +22,9 @@ devDependencies:
   '@spiriit/vite-plugin-svg-spritemap':
     specifier: ^4.1.0
     version: 4.1.0(svgo@3.3.2)(vite@6.1.0)
+  '@types/node':
+    specifier: ^22.15.30
+    version: 22.15.30
   '@types/react':
     specifier: ^19.0.8
     version: 19.0.8
@@ -66,7 +69,7 @@ devDependencies:
     version: 1.10.0
   msw:
     specifier: ^2.9.0
-    version: 2.9.0(typescript@5.8.3)
+    version: 2.9.0(@types/node@22.15.30)(typescript@5.8.3)
   nodemon:
     specifier: ^3.1.9
     version: 3.1.9
@@ -114,13 +117,10 @@ devDependencies:
     version: 5.8.3
   vite:
     specifier: ^6.1.0
-    version: 6.1.0(sass@1.84.0)
+    version: 6.1.0(@types/node@22.15.30)(sass@1.84.0)
   vite-plugin-checker:
     specifier: ^0.9.3
     version: 0.9.3(eslint@9.20.1)(typescript@5.8.3)(vite@6.1.0)
-  vite-plugin-svg-spritemap:
-    specifier: ^1.0.12
-    version: 1.0.12(vite@6.1.0)
   vite-plugin-svgo:
     specifier: ^1.6.2
     version: 1.6.2(typescript@5.8.3)(vite@6.1.0)
@@ -870,7 +870,7 @@ packages:
     dev: true
     optional: true
 
-  /@inquirer/confirm@5.1.12:
+  /@inquirer/confirm@5.1.12(@types/node@22.15.30):
     resolution: {integrity: sha512-dpq+ielV9/bqgXRUbNH//KsY6WEw9DrGPmipkpmgC1Y46cwuBTNx7PXFWTjc3MQ+urcc0QxoVHcMI0FW4Ok0hg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -879,11 +879,12 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@inquirer/core': 10.1.13
-      '@inquirer/type': 3.0.7
+      '@inquirer/core': 10.1.13(@types/node@22.15.30)
+      '@inquirer/type': 3.0.7(@types/node@22.15.30)
+      '@types/node': 22.15.30
     dev: true
 
-  /@inquirer/core@10.1.13:
+  /@inquirer/core@10.1.13(@types/node@22.15.30):
     resolution: {integrity: sha512-1viSxebkYN2nJULlzCxES6G9/stgHSepZ9LqqfdIGPHj5OHhiBUXVS0a6R0bEC2A+VL4D9w6QB66ebCr6HGllA==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -893,7 +894,8 @@ packages:
         optional: true
     dependencies:
       '@inquirer/figures': 1.0.12
-      '@inquirer/type': 3.0.7
+      '@inquirer/type': 3.0.7(@types/node@22.15.30)
+      '@types/node': 22.15.30
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       mute-stream: 2.0.0
@@ -907,7 +909,7 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@inquirer/type@3.0.7:
+  /@inquirer/type@3.0.7(@types/node@22.15.30):
     resolution: {integrity: sha512-PfunHQcjwnju84L+ycmcMKB/pTPIngjUJvfnRhKY6FKPuYXlM4aQCb/nIdTFR6BEhMjFvngzvng/vBAJMZpLSA==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -915,6 +917,8 @@ packages:
     peerDependenciesMeta:
       '@types/node':
         optional: true
+    dependencies:
+      '@types/node': 22.15.30
     dev: true
 
   /@isaacs/cliui@8.0.2:
@@ -1368,7 +1372,7 @@ packages:
       mini-svg-data-uri: 1.4.4
       svgo: 3.3.2
       tinyglobby: 0.2.14
-      vite: 6.1.0(sass@1.84.0)
+      vite: 6.1.0(@types/node@22.15.30)(sass@1.84.0)
     dev: true
 
   /@standard-schema/spec@1.0.0:
@@ -1429,6 +1433,12 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
+  /@types/node@22.15.30:
+    resolution: {integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==}
+    dependencies:
+      undici-types: 6.21.0
+    dev: true
+
   /@types/react-dom@19.0.3(@types/react@19.0.8):
     resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
     peerDependencies:
@@ -1470,7 +1480,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.8)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.1.0(sass@1.84.0)
+      vite: 6.1.0(@types/node@22.15.30)(sass@1.84.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2798,8 +2808,8 @@ packages:
       path-scurry: 1.11.1
     dev: true
 
-  /glob@11.0.1:
-    resolution: {integrity: sha512-zrQDm8XPnYEKawJScsnM0QzobJxlT/kHOOlRTio8IH/GrmxRE5fjllkzdaHclIuNjUQTJYH2xHNIGfdpJkDJUw==}
+  /glob@11.0.2:
+    resolution: {integrity: sha512-YT7U7Vye+t5fZ/QMkBFrTJ7ZQxInIUjwyAjVj84CYXqgBdv30MFUPGnBR6sQaVq6Is15wYJUsnzTuWaGRBhBAQ==}
     engines: {node: 20 || >=22}
     hasBin: true
     dependencies:
@@ -2909,11 +2919,6 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
-    dev: true
-
-  /he@1.2.0:
-    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
-    hasBin: true
     dev: true
 
   /headers-polyfill@4.0.3:
@@ -3550,7 +3555,7 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw@2.9.0(typescript@5.8.3):
+  /msw@2.9.0(@types/node@22.15.30)(typescript@5.8.3):
     resolution: {integrity: sha512-fNyrJ11YNbe2zl64EwtxM5OFkInFPAw5vipOljMsf9lY2ep9B2BslqQrS8EC9pB9961K61FqTUi0wsdqk6hwow==}
     engines: {node: '>=18'}
     hasBin: true
@@ -3564,7 +3569,7 @@ packages:
       '@bundled-es-modules/cookie': 2.0.1
       '@bundled-es-modules/statuses': 1.0.1
       '@bundled-es-modules/tough-cookie': 0.1.6
-      '@inquirer/confirm': 5.1.12
+      '@inquirer/confirm': 5.1.12(@types/node@22.15.30)
       '@mswjs/interceptors': 0.38.7
       '@open-draft/deferred-promise': 2.2.0
       '@open-draft/until': 2.1.0
@@ -3637,13 +3642,6 @@ packages:
       which: 4.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /node-html-parser@7.0.1:
-    resolution: {integrity: sha512-KGtmPY2kS0thCWGK0VuPyOS+pBKhhe8gXztzA2ilAOhbUbxa9homF1bOyKvhGzMLXUoRds9IOmr/v5lr/lqNmA==}
-    dependencies:
-      css-select: 5.1.0
-      he: 1.2.0
     dev: true
 
   /node-releases@2.0.19:
@@ -4175,7 +4173,7 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
     dependencies:
-      glob: 11.0.1
+      glob: 11.0.2
       package-json-from-dist: 1.0.1
     dev: true
 
@@ -4821,6 +4819,10 @@ packages:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
     dev: true
 
+  /undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+    dev: true
+
   /undici@7.10.0:
     resolution: {integrity: sha512-u5otvFBOBZvmdjWLVW+5DAc9Nkq8f24g0O9oY7qw2JVIF1VocIFoyz9JFkuVOS2j41AufeO0xnlweJ2RLT8nGw==}
     engines: {node: '>=20.18.1'}
@@ -4935,21 +4937,8 @@ packages:
       tiny-invariant: 1.3.3
       tinyglobby: 0.2.14
       typescript: 5.8.3
-      vite: 6.1.0(sass@1.84.0)
+      vite: 6.1.0(@types/node@22.15.30)(sass@1.84.0)
       vscode-uri: 3.1.0
-    dev: true
-
-  /vite-plugin-svg-spritemap@1.0.12(vite@6.1.0):
-    resolution: {integrity: sha512-OpHn8TYghUNEZ6OfJPYNt0DGbOjIRDebOneEYCUSpI4lM168alQjmbK43jhl9oL108wkUPZKkL08KSlIow0dFw==}
-    peerDependencies:
-      vite: ^2 || ^3 || ^4 || ^5 || ^6
-    dependencies:
-      chokidar: 4.0.3
-      fast-glob: 3.3.3
-      fs-extra: 11.3.0
-      node-html-parser: 7.0.1
-      svgo: 3.3.2
-      vite: 6.1.0(sass@1.84.0)
     dev: true
 
   /vite-plugin-svgo@1.6.2(typescript@5.8.3)(vite@6.1.0):
@@ -4960,10 +4949,10 @@ packages:
     dependencies:
       svgo: 3.0.4
       typescript: 5.8.3
-      vite: 6.1.0(sass@1.84.0)
+      vite: 6.1.0(@types/node@22.15.30)(sass@1.84.0)
     dev: true
 
-  /vite@6.1.0(sass@1.84.0):
+  /vite@6.1.0(@types/node@22.15.30)(sass@1.84.0):
     resolution: {integrity: sha512-RjjMipCKVoR4hVfPY6GQTgveinjNuyLw+qruksLDvA5ktI1150VmcMBKmQaEWJhg/j6Uaf6dNCNA0AfdzUb/hQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -5003,6 +4992,7 @@ packages:
       yaml:
         optional: true
     dependencies:
+      '@types/node': 22.15.30
       esbuild: 0.24.2
       postcss: 8.5.4
       rollup: 4.34.6
