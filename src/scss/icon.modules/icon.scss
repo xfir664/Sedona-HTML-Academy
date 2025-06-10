@@ -1,0 +1,57 @@
+@use "./icon-var.scss" as icon;
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: none;
+  line-height: none;
+
+  &--base {
+    color: icon.$col-base;
+
+    &:hover {
+      color: icon.$col-hover-base;
+    }
+
+    &:focus {
+      color: icon.$col-focus-base;
+    }
+
+    &:active {
+      color: icon.$col-active-base;
+    }
+  }
+
+  &--primary {
+    color: icon.$col-primary;
+
+    &:hover {
+      color: icon.$col-hover-primary;
+    }
+
+    &:focus {
+      color: icon.$col-focus-primary;
+    }
+
+    &:active {
+      color: icon.$col-active-primary;
+    }
+  }
+
+  &--secondary {
+    color: icon.$col-secondary;
+
+    &:hover {
+      color: icon.$col-hover-secondary;
+    }
+
+    &:focus {
+      color: icon.$col-focus-secondary;
+    }
+
+    &:active {
+      color: icon.$col-active-secondary;
+    }
+  }
+}

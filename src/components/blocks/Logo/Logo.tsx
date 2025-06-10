@@ -21,7 +21,7 @@ const MyLogoLink = styled(Link)`
 
 export default function Logo() {
   return (
-    <MyLogoWrapper className="m-0">
+    <MyLogoWrapper>
       <MyLogoLink to="/">
         <img src={"./img/logo.svg"} alt="logo sedona" height={70} width={140} />
       </MyLogoLink>

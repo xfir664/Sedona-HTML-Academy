@@ -1,12 +1,11 @@
-import Header from "./components/layout/Header/Header";
+import Header from "@components/layout/Header/Header";
+import Main from "@components/layout/Main/Main";
 
 const App: React.FC = () => {
   return (
     <div className="container">
       <Header></Header>
-      <div className="main">
-        <h1 className="title">Main</h1>
-      </div>
+      <Main></Main>
       <div className="footer">
         <h1>footer</h1>
       </div>

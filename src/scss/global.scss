@@ -54,6 +54,7 @@ body {
   padding: 0 10px;
   max-width: variables.$desctop-width;
   background-color: var(--bg-primary);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: variables.$desctop-width) {
     padding: 0;
