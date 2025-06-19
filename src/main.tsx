@@ -1,15 +1,33 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
-import "./scss/index.scss";
-import App from "./App";
-import ErrorPage404 from "./error-page-404";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "@/scss/index.scss";
+import App from "@/App";
+import ErrorPage404 from "@/error-page-404";
+import Index from "@/pages/Index";
+import Catalog from "@/pages/Catalog";
 
-const router = createHashRouter([
+const BASE_PATH = import.meta.env.VITE_BASE_PATH ?? "/";
+
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: BASE_PATH,
     element: <App></App>,
     errorElement: <ErrorPage404 />,
+    children: [
+      {
+        index: true,
+        element: <Index></Index>,
+      },
+      {
+        path: "catalog",
+        element: <Catalog></Catalog>,
+      },
+      {
+        path: "*", // для всех несуществующих путей
+        element: <ErrorPage404 />,
+      },
+    ],
   },
 ]);
 

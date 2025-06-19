@@ -5,7 +5,7 @@ import autoprefixer from "autoprefixer";
 import path from "path";
 
 export default defineConfig({
-  base: "/Sedona-HTML-Academy/",
+  base: process.env.VITE_BASE_PATH || "/",
   plugins: [react(), checker({ typescript: true })],
   resolve: {
     alias: {
