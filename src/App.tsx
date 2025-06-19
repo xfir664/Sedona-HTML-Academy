@@ -3,7 +3,7 @@ import Main from "@components/layout/Main/Main";
 
 const App: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container base">
       <Header></Header>
       <Main></Main>
       <div className="footer">

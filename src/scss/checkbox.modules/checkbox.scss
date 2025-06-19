@@ -1,4 +1,58 @@
-.checkbox-label {
-  font-size: var(--checkbox-size);
-  line-height: var(--checkbox-height);
+@use "./checkbox.var.scss" as checkbox;
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &--base {
+    font-size: var(--checkbox-size--base);
+    line-height: var(--checkbox-height--base);
+    color: checkbox.$col-base;
+    transition: opacity ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      opacity: 0.1;
+    }
+
+    & .checkbox-wrapper {
+      position: relative;
+    }
+
+    & .checkbox-btn {
+      appearance: none;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: checkbox.$bg-base;
+
+      & + .checkbox-icon {
+        display: none;
+      }
+
+      &:checked + .checkbox-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #3f5e72;
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
 }

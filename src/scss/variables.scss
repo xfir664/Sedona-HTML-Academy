@@ -1,128 +1,28 @@
-//----Text-----------
-$title-size-mob: 30px;
-$title-size-tablet: 30px;
-$title-size-desctop: 30px;
-
-$title-height-mob: 36px;
-$title-height-tablet: 36px;
-$title-height-desctop: 36px;
-
-$subtitle-size-mob: 24px;
-$subtitle-size-tablet: 24px;
-$subtitle-size-desctop: 24px;
-
-$subtitle-height-mob: 28px;
-$subtitle-height-tablet: 28px;
-$subtitle-height-desctop: 28px;
-
-$decription-size-mob: 22px;
-$decription-size-tablet: 22px;
-$decription-size-desctop: 22px;
-
-$decription-height-mob: 26px;
-$decription-height-tablet: 26px;
-$decription-height-desctop: 26px;
-
-$link-size-mob: 16px;
-$link-size-tablet: 16px;
-$link-size-desctop: 16px;
-
-$link-height-mob: 21px;
-$link-height-tablet: 21px;
-$link-height-desctop: 21px;
-
-$text-size-mob: 18px;
-$text-size-tablet: 18px;
-$text-size-desctop: 18px;
-
-$text-height-mob: 21px;
-$text-height-tablet: 21px;
-$text-height-desctop: 21px;
-
-$input-size-mob: 18px;
-$input-size-tablet: 18px;
-$input-size-desctop: 18px;
-
-$input-height-mob: 24px;
-$input-height-tablet: 24px;
-$input-height-desctop: 24px;
-
-$checkbox-size-mob: 18px;
-$checkbox-size-tablet: 18px;
-$checkbox-size-desctop: 18px;
-
-$checkbox-height-mob: 23px;
-$checkbox-height-tablet: 23px;
-$checkbox-height-desctop: 23px;
-
-$radio-size-mob: 18px;
-$radio-size-tablet: 18px;
-$radio-size-desctop: 18px;
-
-$radio-height-mob: 23px;
-$radio-height-tablet: 23px;
-$radio-height-desctop: 23px;
-
-$select-size-mob: 18px;
-$select-size-tablet: 18px;
-$select-size-desctop: 18px;
-
-$select-height-mob: 21px;
-$select-height-tablet: 21px;
-$select-height-desctop: 21px;
-
 //-----Width view
 
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desctop-width: 1200px;
+$desktop-width: 1200px;
 
-$max-width: calc($desctop-width + 20px);
+$max-width: calc($desktop-width + 20px);
 
 //----Grid template
 
 $grid-gap-mob: 20px;
 $grid-gap-tablet: 20px;
-$grid-gap-desctop: 24px;
+$grid-gap-desktop: 24px;
 
 $grid-column-mob: 4;
 $grid-column-tablet: 8;
-$grid-column-desctop: 12;
+$grid-column-desktop: 12;
 
 $grid-size-mob: 60px;
 $grid-size-tablet: 76px;
-$grid-size-desctop: 78px;
+$grid-size-desktop: 78px;
 
 //----root css
 
 :root {
-  --title-size: #{$title-size-mob};
-  --title-height: #{$title-height-mob};
-
-  --subtitle-size: #{$subtitle-size-mob};
-  --subtitle-height: #{$subtitle-height-mob};
-
-  --decription-size: #{$decription-size-mob};
-  --decription-height: #{$decription-height-mob};
-
-  --link-size: #{$link-size-mob};
-  --link-height: #{$link-height-mob};
-
-  --text-size: #{$text-size-mob};
-  --text-height: #{$text-height-mob};
-
-  --input-size: #{$input-size-mob};
-  --input-height: #{$input-height-mob};
-
-  --checkbox-size: #{$checkbox-size-mob};
-  --checkbox-height: #{$checkbox-height-mob};
-
-  --radio-size: #{$radio-size-mob};
-  --radio-height: #{$radio-height-mob};
-
-  --select-size: #{$radio-size-mob};
-  --select-height: #{$radio-height-mob};
-
   --grid-gap: #{$grid-gap-mob};
   --grid-column: #{$grid-column-mob};
   --grid-size: #{$grid-size-mob};
@@ -130,70 +30,16 @@ $grid-size-desctop: 78px;
 
 @media (min-width: $tablet-width) {
   :root {
-    --title-size: #{$title-size-tablet};
-    --title-height: #{$title-height-tablet};
-
-    --subtitle-size: #{$subtitle-size-tablet};
-    --subtitle-height: #{$subtitle-height-tablet};
-
-    --decription-size: #{$decription-size-tablet};
-    --decription-height: #{$decription-height-tablet};
-
-    --link-size: #{$link-size-tablet};
-    --link-height: #{$link-height-tablet};
-
-    --text-size: #{$text-size-tablet};
-    --text-height: #{$text-height-tablet};
-
-    --input-size: #{$input-size-tablet};
-    --input-height: #{$input-height-tablet};
-
-    --checkbox-size: #{$checkbox-size-tablet};
-    --checkbox-height: #{$checkbox-height-tablet};
-
-    --radio-size: #{$radio-size-tablet};
-    --radio-height: #{$radio-height-tablet};
-
-    --select-size: #{$radio-size-tablet};
-    --select-height: #{$radio-height-tablet};
-
     --grid-gap: #{$grid-gap-tablet};
     --grid-column: #{$grid-column-tablet};
     --grid-size: #{$grid-size-tablet};
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   :root {
-    --title-size: #{$title-size-desctop};
-    --title-height: #{$title-height-desctop};
-
-    --subtitle-size: #{$subtitle-size-desctop};
-    --subtitle-height: #{$subtitle-height-desctop};
-
-    --decription-size: #{$decription-size-desctop};
-    --decription-height: #{$decription-height-desctop};
-
-    --link-size: #{$link-size-desctop};
-    --link-height: #{$link-height-desctop};
-
-    --text-size: #{$text-size-desctop};
-    --text-height: #{$text-height-desctop};
-
-    --input-size: #{$input-size-desctop};
-    --input-height: #{$input-height-desctop};
-
-    --checkbox-size: #{$checkbox-size-desctop};
-    --checkbox-height: #{$checkbox-height-desctop};
-
-    --radio-size: #{$radio-size-desctop};
-    --radio-height: #{$radio-height-desctop};
-
-    --select-size: #{$radio-size-desctop};
-    --select-height: #{$radio-height-desctop};
-
-    --grid-gap: #{$grid-gap-desctop};
-    --grid-column: #{$grid-column-desctop};
-    --grid-size: #{$grid-size-desctop};
+    --grid-gap: #{$grid-gap-desktop};
+    --grid-column: #{$grid-column-desktop};
+    --grid-size: #{$grid-size-desktop};
   }
 }

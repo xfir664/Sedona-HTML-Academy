@@ -1,14 +1,35 @@
-$col-base: #000000;
-$col-hover-base: rgba($col-base, 0.7);
-$col-focus-base: rgba($col-base, 0.7);
-$col-active-base: rgba($col-base, 0.3);
+$col-base: #83b3d3;
+$col-base-hover: #68a2ca;
+$col-base-focus: #68a2ca;
+$col-base-click: rgba($col-base-focus, 0.3);
+$col-base-disabled: #ededed;
 
-$col-primary: #000000;
-$col-hover-primary: rgba($col-primary, 0.7);
-$col-focus-primary: rgba($col-primary, 0.7);
-$col-active-primary: rgba($col-primary, 0.3);
+$col-base--active: #83b3d3;
+$col-base-hover--active: #68a2ca;
+$col-base-focus--active: #68a2ca;
+$col-base-click--active: rgba($col-base-focus--active, 0.3);
+$col-base-disabled--active: #ededed;
 
-$col-secondary: #000000;
-$col-hover-secondary: rgba($col-secondary, 0.7);
-$col-focus-secondary: rgba($col-secondary, 0.7);
-$col-active-secondary: rgba($col-secondary, 0.7);
+$col-primary: #83b3d3;
+$col-primary-hover: #68a2ca;
+$col-primary-focus: #68a2ca;
+$col-primary-click: rgba($col-primary-focus, 0.3);
+$col-primary-disabled: #ededed;
+
+$col-primary--active: #83b3d3;
+$col-primary-hover--active: #68a2ca;
+$col-primary-focus--active: #68a2ca;
+$col-primary-click--active: rgba($col-primary-focus--active, 0.3);
+$col-primary-disabled--active: #ededed;
+
+$col-secondary: #83b3d3;
+$col-secondary-hover: #68a2ca;
+$col-secondary-focus: #68a2ca;
+$col-secondary-click: rgba($col-secondary-focus, 0.3);
+$col-secondary-disabled: #ededed;
+
+$col-secondary--active: #83b3d3;
+$col-secondary-hover--active: #68a2ca;
+$col-secondary-focus--active: #68a2ca;
+$col-secondary-click--active: rgba($col-secondary-focus--active, 0.3);
+$col-secondary-disabled--active: #ededed;

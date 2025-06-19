@@ -1,0 +1,170 @@
+@use "./pagination.var.scss" as pagination;
+
+.pagination {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+
+  &--base {
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-size: var(--pagination-size--base);
+    line-height: var(--pagination-height--base);
+    background-color: pagination.$bg-base;
+    color: pagination.$col-base;
+
+    &:hover {
+      background-color: pagination.$bg-base-hover;
+      color: pagination.$col-base-hover;
+    }
+
+    &:focus {
+      background-color: pagination.$bg-base-focus;
+      color: pagination.$col-base-focus;
+    }
+
+    &:active {
+      background-color: pagination.$bg-base-click;
+      color: pagination.$col-base-click;
+    }
+
+    &:disabled {
+      background-color: pagination.$bg-base-disabled;
+      color: pagination.$col-base-disabled;
+    }
+
+    &.active {
+      background-color: pagination.$bg-base--active;
+      color: pagination.$col-base--active;
+
+      &:hover {
+        background-color: pagination.$bg-base-hover--active;
+        color: pagination.$col-base-hover--active;
+      }
+
+      &:focus {
+        background-color: pagination.$bg-base-focus--active;
+        color: pagination.$col-base-focus--active;
+      }
+
+      &:active {
+        background-color: pagination.$bg-base-click--active;
+        color: pagination.$col-base-click--active;
+      }
+
+      &:disabled {
+        background-color: pagination.$bg-base-disabled--active;
+        color: pagination.$col-base-disabled--active;
+      }
+    }
+  }
+
+  &--primary {
+    font-family: var(--font-base);
+    border-radius: 4px;
+    font-size: var(--pagination-size--primary);
+    line-height: var(--pagination-height--primary);
+    background-color: pagination.$bg-primary;
+    color: pagination.$col-primary;
+
+    &:hover {
+      background-color: pagination.$bg-primary-hover;
+      color: pagination.$col-primary-hover;
+    }
+
+    &:focus {
+      background-color: pagination.$bg-primary-focus;
+      color: pagination.$col-primary-focus;
+    }
+
+    &:active {
+      background-color: pagination.$bg-primary-click;
+      color: pagination.$col-primary-click;
+    }
+
+    &:disabled {
+      background-color: pagination.$bg-primary-disabled;
+      color: pagination.$col-primary-disabled;
+    }
+
+    &.active {
+      background-color: pagination.$bg-primary--active;
+      color: pagination.$col-primary--active;
+
+      &:hover {
+        background-color: pagination.$bg-primary-hover--active;
+        color: pagination.$col-primary-hover--active;
+      }
+
+      &:focus {
+        background-color: pagination.$bg-primary-focus--active;
+        color: pagination.$col-primary-focus--active;
+      }
+
+      &:active {
+        background-color: pagination.$bg-primary-click--active;
+        color: pagination.$col-primary-click--active;
+      }
+
+      &:disabled {
+        background-color: pagination.$bg-primary-disabled--active;
+        color: pagination.$col-primary-disabled--active;
+      }
+    }
+  }
+
+  &--secondary {
+    font-family: var(--font-base);
+    font-size: var(--pagination-size--secondary);
+    line-height: var(--pagination-height--secondary);
+    background-color: pagination.$bg-secondary;
+    color: pagination.$col-secondary;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: pagination.$bg-secondary-hover;
+      color: pagination.$col-secondary-hover;
+    }
+
+    &:focus {
+      background-color: pagination.$bg-secondary-focus;
+      color: pagination.$col-secondary-focus;
+    }
+
+    &:active {
+      background-color: pagination.$bg-secondary-click;
+      color: pagination.$col-secondary-click;
+    }
+
+    &:disabled {
+      background-color: pagination.$bg-secondary-disabled;
+      color: pagination.$col-secondary-disabled;
+    }
+
+    &.active {
+      background-color: pagination.$bg-secondary--active;
+      color: pagination.$col-secondary--active;
+
+      &:hover {
+        background-color: pagination.$bg-secondary-hover--active;
+        color: pagination.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        background-color: pagination.$bg-secondary-focus--active;
+        color: pagination.$col-secondary-focus--active;
+      }
+
+      &:active {
+        background-color: pagination.$bg-secondary-click--active;
+        color: pagination.$col-secondary-click--active;
+      }
+
+      &:disabled {
+        background-color: pagination.$bg-secondary-disabled--active;
+        color: pagination.$col-secondary-disabled--active;
+      }
+    }
+  }
+}

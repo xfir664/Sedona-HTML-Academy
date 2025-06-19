@@ -1,8 +1,8 @@
 @use "mixsins";
 
-$font-base: "PTSans";
-$font-primary: "PTSans";
-$font-secondary: "PTSans";
+$font-base: "PT Sans";
+$font-primary: "PT Sans";
+$font-secondary: "PT Sans";
 
 @include mixsins.font-face(
   $font-base,

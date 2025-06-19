@@ -1,25 +1,46 @@
 @use "./icon-var.scss" as icon;
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: none;
-  line-height: none;
+  display: block;
+  transition: all ease-in-out 0.3s;
 
   &--base {
     color: icon.$col-base;
 
     &:hover {
-      color: icon.$col-hover-base;
+      color: icon.$col-base-hover;
     }
 
     &:focus {
-      color: icon.$col-focus-base;
+      color: icon.$col-base-focus;
     }
 
     &:active {
-      color: icon.$col-active-base;
+      color: icon.$col-base-click;
+    }
+
+    &:disabled {
+      color: icon.$col-base-disabled;
+    }
+
+    &.active {
+      color: icon.$col-base--active;
+
+      &:hover {
+        color: icon.$col-base-hover--active;
+      }
+
+      &:focus {
+        color: icon.$col-base-focus--active;
+      }
+
+      &:active {
+        color: icon.$col-base-click--active;
+      }
+
+      &:disabled {
+        color: icon.$col-base-disabled--active;
+      }
     }
   }
 
@@ -27,15 +48,39 @@
     color: icon.$col-primary;
 
     &:hover {
-      color: icon.$col-hover-primary;
+      color: icon.$col-primary-hover;
     }
 
     &:focus {
-      color: icon.$col-focus-primary;
+      color: icon.$col-primary-focus;
     }
 
     &:active {
-      color: icon.$col-active-primary;
+      color: icon.$col-primary-click;
+    }
+
+    &:disabled {
+      color: icon.$col-primary-disabled;
+    }
+
+    &.active {
+      color: icon.$col-primary--active;
+
+      &:hover {
+        color: icon.$col-primary-hover--active;
+      }
+
+      &:focus {
+        color: icon.$col-primary-focus--active;
+      }
+
+      &:active {
+        color: icon.$col-primary-click--active;
+      }
+
+      &:disabled {
+        color: icon.$col-primary-disabled--active;
+      }
     }
   }
 
@@ -43,15 +88,39 @@
     color: icon.$col-secondary;
 
     &:hover {
-      color: icon.$col-hover-secondary;
+      color: icon.$col-secondary-hover;
     }
 
     &:focus {
-      color: icon.$col-focus-secondary;
+      color: icon.$col-secondary-focus;
     }
 
     &:active {
-      color: icon.$col-active-secondary;
+      color: icon.$col-secondary-click;
+    }
+
+    &:disabled {
+      color: icon.$col-secondary-disabled;
+    }
+
+    &.active {
+      color: icon.$col-secondary--active;
+
+      &:hover {
+        color: icon.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        color: icon.$col-secondary-focus--active;
+      }
+
+      &:active {
+        color: icon.$col-secondary-click--active;
+      }
+
+      &:disabled {
+        color: icon.$col-secondary-disabled--active;
+      }
     }
   }
 }

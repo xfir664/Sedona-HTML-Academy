@@ -1,4 +1,58 @@
-.radio-label {
-  font-size: var(--radio-size);
-  line-height: var(--radio-height);
+@use "./radio.var.scss" as radio;
+
+.radio {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &--base {
+    font-size: var(--radio-size--base);
+    line-height: var(--radio-height--base);
+    color: radio.$col-base;
+    transition: opacity ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      opacity: 0.1;
+    }
+
+    & .radio-wrapper {
+      position: relative;
+    }
+
+    & .radio-btn {
+      appearance: none;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: radio.$bg-base;
+
+      & + .radio-icon {
+        display: none;
+      }
+
+      &:checked + .radio-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #3f5e72;
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
 }

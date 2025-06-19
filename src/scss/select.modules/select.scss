@@ -1,5 +1,97 @@
+@use "./select.var.scss" as select;
+
 .select {
+  padding: 0;
   border: 0;
-  font-size: var(--select-size);
-  line-height: var(--select-height);
+  transition: all ease-in-out 0.3s;
+
+  &--base {
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--select-size--base);
+    line-height: var(--select-height--base);
+    background-color: select.$bg-base;
+    color: select.$col-base;
+
+    &:hover {
+      background-color: select.$bg-base-hover;
+      color: select.$col-base-hover;
+    }
+
+    &:focus {
+      background-color: select.$bg-base-focus;
+      color: select.$col-base-focus;
+    }
+
+    &:active {
+      background-color: select.$bg-base-active;
+      color: select.$col-base-active;
+    }
+
+    &:disabled {
+      background-color: select.$bg-base-disabled;
+      color: select.$col-base-disabled;
+    }
+  }
+
+  &--primary {
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--select-size--primary);
+    line-height: var(--select-height--primary);
+    background-color: select.$bg-primary;
+    color: select.$col-primary;
+
+    &:hover {
+      background-color: select.$bg-primary-hover;
+      color: select.$col-primary-hover;
+    }
+
+    &:focus {
+      background-color: select.$bg-primary-focus;
+      color: select.$col-primary-focus;
+    }
+
+    &:active {
+      background-color: select.$bg-primary-active;
+      color: select.$col-primary-active;
+    }
+
+    &:disabled {
+      background-color: select.$bg-primary-disabled;
+      color: select.$col-primary-disabled;
+    }
+  }
+
+  &--secondary {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--select-size--secondary);
+    line-height: var(--select-height--secondary);
+    background-color: select.$bg-secondary;
+    color: select.$col-secondary;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: select.$bg-secondary-hover;
+      color: select.$col-secondary-hover;
+    }
+
+    &:focus {
+      background-color: select.$bg-secondary-focus;
+      color: select.$col-secondary-focus;
+    }
+
+    &:active {
+      background-color: select.$bg-secondary-active;
+      color: select.$col-secondary-active;
+    }
+
+    &:disabled {
+      background-color: select.$bg-secondary-disabled;
+      color: select.$col-secondary-disabled;
+    }
+  }
 }

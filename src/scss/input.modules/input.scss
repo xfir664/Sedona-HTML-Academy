@@ -1,97 +1,97 @@
-@use "./input-var.scss" as input;
+@use "./input.var.scss" as input;
 
 .input {
   padding: 0;
   border: 0;
-  font-family: var(--font-base);
-  font-size: var(--input-size);
-  line-height: var(--input-height);
-  font-weight: 700;
+  transition: all ease-in-out 0.3s;
 
   &--base {
-    color: input.$col-base;
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--base);
+    line-height: var(--input-height--base);
     background-color: input.$bg-base;
+    color: input.$col-base;
 
     &:hover {
-      color: input.$col-hover-base;
-      background-color: input.$bg-hover-base;
+      background-color: input.$bg-base-hover;
+      color: input.$col-base-hover;
     }
 
     &:focus {
-      color: input.$col-focus-base;
-      background-color: input.$bg-focus-base;
+      background-color: input.$bg-base-focus;
+      color: input.$col-base-focus;
     }
 
     &:active {
-      color: input.$col-active-base;
-      background-color: input.$bg-active-base;
+      background-color: input.$bg-base-active;
+      color: input.$col-base-active;
     }
 
     &:disabled {
-      color: input.$col-disabled-base;
-      background-color: input.$bg-disabled-base;
-    }
-
-    &::placeholder {
-      color: input.$col-placeholder-base;
+      background-color: input.$bg-base-disabled;
+      color: input.$col-base-disabled;
     }
   }
 
   &--primary {
-    color: input.$col-primary;
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--primary);
+    line-height: var(--input-height--primary);
     background-color: input.$bg-primary;
+    color: input.$col-primary;
 
     &:hover {
-      color: input.$col-hover-primary;
-      background-color: input.$bg-hover-primary;
+      background-color: input.$bg-primary-hover;
+      color: input.$col-primary-hover;
     }
 
     &:focus {
-      color: input.$col-focus-primary;
-      background-color: input.$bg-focus-primary;
+      background-color: input.$bg-primary-focus;
+      color: input.$col-primary-focus;
     }
 
     &:active {
-      color: input.$col-active-primary;
-      background-color: input.$bg-active-primary;
+      background-color: input.$bg-primary-active;
+      color: input.$col-primary-active;
     }
 
     &:disabled {
-      color: input.$col-disabled-primary;
-      background-color: input.$bg-disabled-primary;
-    }
-
-    &::placeholder {
-      color: input.$col-placeholder-primary;
+      background-color: input.$bg-primary-disabled;
+      color: input.$col-primary-disabled;
     }
   }
 
   &--secondary {
-    color: input.$col-secondary;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--secondary);
+    line-height: var(--input-height--secondary);
     background-color: input.$bg-secondary;
+    color: input.$col-secondary;
+    border-radius: 4px;
 
     &:hover {
-      color: input.$col-hover-secondary;
-      background-color: input.$bg-hover-secondary;
+      background-color: input.$bg-secondary-hover;
+      color: input.$col-secondary-hover;
     }
 
     &:focus {
-      color: input.$col-focus-secondary;
-      background-color: input.$bg-focus-secondary;
+      background-color: input.$bg-secondary-focus;
+      color: input.$col-secondary-focus;
     }
 
     &:active {
-      color: input.$col-active-secondary;
-      background-color: input.$bg-active-secondary;
+      background-color: input.$bg-secondary-active;
+      color: input.$col-secondary-active;
     }
 
     &:disabled {
-      color: input.$col-disabled-secondary;
-      background-color: input.$bg-disabled-secondary;
-    }
-
-    &::placeholder {
-      color: input.$col-placeholder-secondary;
+      background-color: input.$bg-secondary-disabled;
+      color: input.$col-secondary-disabled;
     }
   }
 }

@@ -1,0 +1,16 @@
+@use "./description.var.scss" as description;
+
+.description {
+  font-size: var(--description-size--base);
+  line-height: var(--description-height--base);
+
+  &--primary {
+    font-size: var(--description-size--primary);
+    line-height: var(--description-height--primary);
+  }
+
+  &--secondary {
+    font-size: var(--description-size--secondary);
+    line-height: var(--description-height--secondary);
+  }
+}

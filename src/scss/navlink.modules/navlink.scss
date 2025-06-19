@@ -1,67 +1,170 @@
-@use "./navlink-var.scss" as navlink;
+@use "./navlink.var.scss" as navlink;
 
 .navlink {
-  font-size: var(--navlink-size);
-  line-height: var(--navlink-height);
-  text-decoration: none;
+  transition: all ease-in-out 0.3s;
 
   &--base {
-    color: navlink.$col-base;
+    font-size: var(--navlink-size--base);
+    line-height: var(--navlink-height--base);
     background-color: navlink.$bg-base;
+    color: navlink.$col-base;
+    text-decoration: none;
 
     &:hover {
-      color: navlink.$col-hover-base;
-      background-color: navlink.$bg-hover-base;
+      background-color: navlink.$bg-base-hover;
+      color: navlink.$col-base-hover;
     }
 
     &:focus {
-      color: navlink.$col-focus-base;
-      background-color: navlink.$bg-focus-base;
+      background-color: navlink.$bg-base-focus;
+      color: navlink.$col-base-focus;
     }
 
     &:active {
-      color: navlink.$col-active-base;
-      background-color: navlink.$bg-active-base;
+      background-color: navlink.$bg-base-click;
+      color: navlink.$col-base-click;
+    }
+
+    &.disabled,
+    &.active.disabled {
+      background-color: navlink.$bg-base-disabled;
+      color: navlink.$col-base-disabled;
+    }
+
+    &.active {
+      background-color: navlink.$bg-base--active;
+      color: navlink.$col-base--active;
+
+      &:hover {
+        background-color: navlink.$bg-base-hover--active;
+        color: navlink.$col-base-hover--active;
+      }
+
+      &:focus {
+        background-color: navlink.$bg-base-focus--active;
+        color: navlink.$col-base-focus--active;
+      }
+
+      &:active {
+        background-color: navlink.$bg-base-click--active;
+        color: navlink.$col-base-click--active;
+      }
+
+      &.disabled,
+      &.active.disabled {
+        background-color: navlink.$bg-base-disabled;
+        color: navlink.$col-base-disabled;
+      }
     }
   }
 
   &--primary {
-    color: navlink.$col-primary;
+    font-family: var(--font-base);
+    border-radius: 4px;
+    font-size: var(--navlink-size--primary);
+    line-height: var(--navlink-height--primary);
     background-color: navlink.$bg-primary;
+    color: navlink.$col-primary;
 
     &:hover {
-      color: navlink.$col-hover-primary;
-      background-color: navlink.$bg-hover-primary;
+      background-color: navlink.$bg-primary-hover;
+      color: navlink.$col-primary-hover;
     }
 
     &:focus {
-      color: navlink.$col-focus-primary;
-      background-color: navlink.$bg-focus-primary;
+      background-color: navlink.$bg-primary-focus;
+      color: navlink.$col-primary-focus;
     }
 
     &:active {
-      color: navlink.$col-active-primary;
-      background-color: navlink.$bg-active-primary;
+      background-color: navlink.$bg-primary-click;
+      color: navlink.$col-primary-click;
+    }
+
+    &.disabled,
+    &.active.disabled {
+      background-color: navlink.$bg-base-disabled;
+      color: navlink.$col-base-disabled;
+    }
+
+    &.active {
+      background-color: navlink.$bg-primary--active;
+      color: navlink.$col-primary--active;
+
+      &:hover {
+        background-color: navlink.$bg-primary-hover--active;
+        color: navlink.$col-primary-hover--active;
+      }
+
+      &:focus {
+        background-color: navlink.$bg-primary-focus--active;
+        color: navlink.$col-primary-focus--active;
+      }
+
+      &:active {
+        background-color: navlink.$bg-primary-click--active;
+        color: navlink.$col-primary-click--active;
+      }
+
+      &.disabled,
+      &.active.disabled {
+        background-color: navlink.$bg-base-disabled;
+        color: navlink.$col-base-disabled;
+      }
     }
   }
 
   &--secondary {
-    color: navlink.$col-secondary;
+    font-family: var(--font-base);
+    font-size: var(--navlink-size--secondary);
+    line-height: var(--navlink-height--secondary);
     background-color: navlink.$bg-secondary;
+    color: navlink.$col-secondary;
+    border-radius: 4px;
 
     &:hover {
-      color: navlink.$col-hover-secondary;
-      background-color: navlink.$bg-hover-secondary;
+      background-color: navlink.$bg-secondary-hover;
+      color: navlink.$col-secondary-hover;
     }
 
     &:focus {
-      color: navlink.$col-focus-secondary;
-      background-color: navlink.$bg-focus-secondary;
+      background-color: navlink.$bg-secondary-focus;
+      color: navlink.$col-secondary-focus;
     }
 
     &:active {
-      color: navlink.$col-active-secondary;
-      background-color: navlink.$bg-active-secondary;
+      background-color: navlink.$bg-secondary-click;
+      color: navlink.$col-secondary-click;
+    }
+
+    &:disabled {
+      background-color: navlink.$bg-secondary-disabled;
+      color: navlink.$col-secondary-disabled;
+    }
+
+    &.active {
+      background-color: navlink.$bg-secondary--active;
+      color: navlink.$col-secondary--active;
+
+      &:hover {
+        background-color: navlink.$bg-secondary-hover--active;
+        color: navlink.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        background-color: navlink.$bg-secondary-focus--active;
+        color: navlink.$col-secondary-focus--active;
+      }
+
+      &:active {
+        background-color: navlink.$bg-secondary-click--active;
+        color: navlink.$col-secondary-click--active;
+      }
+
+      &:disabled {
+        background-color: navlink.$bg-secondary-disabled--active;
+        color: navlink.$col-secondary-disabled--active;
+      }
     }
   }
 }
