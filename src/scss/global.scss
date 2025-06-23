@@ -7,7 +7,7 @@
 }
 
 #root {
-  height: 100%;
+  flex-grow: 1;
 }
 
 html {
@@ -33,10 +33,12 @@ img {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: var(--font-base);
-  background-color: #f2f2f2;
+  background-color: var(--bg-body);
 }
 
 .main {
@@ -50,7 +52,7 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   max-width: var.$desktop-width;
-  background-color: #ffffff;
+  background-color: var(--bg-base);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: var.$desktop-width) {
@@ -98,4 +100,8 @@ body {
 
 .grid-column-full {
   grid-column: 1 / -1;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }

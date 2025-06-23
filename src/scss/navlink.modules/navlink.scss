@@ -4,8 +4,11 @@
   transition: all ease-in-out 0.3s;
 
   &--base {
+    display: block;
+    padding: 20px 16px;
     font-size: var(--navlink-size--base);
     line-height: var(--navlink-height--base);
+    font-weight: 700;
     background-color: navlink.$bg-base;
     color: navlink.$col-base;
     text-decoration: none;
@@ -32,8 +35,20 @@
     }
 
     &.active {
+      position: relative;
       background-color: navlink.$bg-base--active;
       color: navlink.$col-base--active;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        bottom: -1px;
+        transform: translateX(50%);
+        width: calc(100% - 16px * 2);
+        height: 2px;
+        background-color: #756257;
+      }
 
       &:hover {
         background-color: navlink.$bg-base-hover--active;

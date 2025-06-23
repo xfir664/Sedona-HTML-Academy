@@ -1,11 +1,11 @@
 @use "./input.var.scss" as input;
 
 .input {
-  padding: 0;
-  border: 0;
   transition: all ease-in-out 0.3s;
 
-  &--base {
+  &--base .input-action {
+    padding: 0;
+    border: 0;
     border-radius: 4px;
     font-family: var(--font-base);
     font-weight: 700;
@@ -35,7 +35,7 @@
     }
   }
 
-  &--primary {
+  &--primary .input-btn {
     border-radius: 4px;
     font-family: var(--font-base);
     font-weight: 700;
@@ -65,7 +65,7 @@
     }
   }
 
-  &--secondary {
+  &--secondary .input-btn {
     font-family: var(--font-base);
     font-weight: 700;
     font-size: var(--input-size--secondary);

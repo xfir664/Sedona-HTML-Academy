@@ -46,6 +46,7 @@
     "globals": "^15.14.0",
     "localforage": "^1.10.0",
     "msw": "^2.9.0",
+    "nanoid": "^5.1.5",
     "nodemon": "^3.1.9",
     "postcss": "^8.5.4",
     "prop-types": "^15.8.1",

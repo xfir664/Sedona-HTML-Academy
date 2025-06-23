@@ -7,7 +7,7 @@ import ErrorPage404 from "@/error-page-404";
 import Index from "@/pages/Index";
 import Catalog from "@/pages/Catalog";
 
-const BASE_PATH = import.meta.env.VITE_BASE_PATH ?? "/";
+const BASE_PATH = "/Sedona-HTML-Academy/";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Catalog></Catalog>,
       },
       {
-        path: "*", // для всех несуществующих путей
+        path: "*",
         element: <ErrorPage404 />,
       },
     ],

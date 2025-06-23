@@ -23,6 +23,9 @@ $grid-size-desktop: 78px;
 //----root css
 
 :root {
+  --bg-body: #f2f2f2;
+  --bg-base: #ffffff;
+
   --grid-gap: #{$grid-gap-mob};
   --grid-column: #{$grid-column-mob};
   --grid-size: #{$grid-size-mob};

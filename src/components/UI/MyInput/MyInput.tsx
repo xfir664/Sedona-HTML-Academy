@@ -1,21 +1,19 @@
-import MyIcon from "@components/UI/MyIcon/MyIcon";
-
 type MyInputType = Readonly<{
   name: string;
   id?: string;
-  inputType: "radio" | "input" | "checkbox";
+  inputType: string;
   value?: string;
   className?: string;
   children?: any;
-  iconId?: string;
+  placeholder?: string;
   onClick?: () => any;
-  onChange?: () => any;
+  onChange?: (event: any) => any;
   isDisabled?: boolean;
+  isRequired?: boolean;
 }>;
 
 export default function MyInput(props: MyInputType) {
   const {
-    iconId,
     id,
     className,
     value,
@@ -24,7 +22,9 @@ export default function MyInput(props: MyInputType) {
     inputType,
     onChange,
     onClick,
+    placeholder,
     isDisabled,
+    isRequired,
   } = props;
 
   return (
@@ -35,14 +35,15 @@ export default function MyInput(props: MyInputType) {
           onChange={onChange}
           onClick={onClick}
           type={inputType}
-          className="input-btn"
+          className="input-action"
           name={name}
           value={value}
           disabled={isDisabled}
+          placeholder={placeholder}
+          required={isRequired}
         />
-        {iconId && <MyIcon className="input-icon" id={iconId}></MyIcon>}
+        <div className="input-container">{children}</div>
       </div>
-      <span className="input-label">{children}</span>
     </label>
   );
 }
