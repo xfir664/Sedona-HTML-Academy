@@ -10,11 +10,11 @@ $height-base-desktop: 24px;
 
 $size-primary-mob: 16px;
 $size-primary-tablet: 16px;
-$size-primary-desktop: 23px;
+$size-primary-desktop: 16px;
 
 $height-primary-mob: 21px;
 $height-primary-tablet: 21px;
-$height-primary-desktop: 23px;
+$height-primary-desktop: 21px;
 
 $size-secondary-mob: 16px;
 $size-secondary-tablet: 16px;
@@ -36,17 +36,17 @@ $col-base-focus--active: rgba($col-base--active, 0.6);
 $col-base-click--active: rgba($col-base--active, 0.3);
 $col-base-disabled--active: rgba($col-base--active, 0.3);
 
-$col-primary: #9f2020;
-$col-primary-hover: rgba($col-primary, 1);
-$col-primary-focus: rgba($col-primary, 1);
+$col-primary: #ffffff;
+$col-primary-hover: rgba($col-primary, 0.6);
+$col-primary-focus: rgba($col-primary, 0.6);
 $col-primary-click: rgba($col-primary, 0.3);
-$col-primary-disabled: rgba($col-primary, 1);
+$col-primary-disabled: rgba($col-primary, 0.3);
 
-$col-primary--active: #815252;
-$col-primary-hover--active: rgba($col-primary--active, 1);
-$col-primary-focus--active: rgba($col-primary--active, 1);
+$col-primary--active: #ffffff;
+$col-primary-hover--active: rgba($col-primary--active, 0.6);
+$col-primary-focus--active: rgba($col-primary--active, 0.6);
 $col-primary-click--active: rgba($col-primary--active, 0.3);
-$col-primary-disabled--active: rgba($col-primary--active, 1);
+$col-primary-disabled--active: rgba($col-primary--active, 0.3);
 
 $col-secondary: #11afa5;
 $col-secondary-hover: rgba($col-secondary, 1);

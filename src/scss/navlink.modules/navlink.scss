@@ -80,6 +80,7 @@
     line-height: var(--navlink-height--primary);
     background-color: navlink.$bg-primary;
     color: navlink.$col-primary;
+    text-decoration: none;
 
     &:hover {
       background-color: navlink.$bg-primary-hover;

@@ -9,6 +9,7 @@ type MyBtnLinkType = Readonly<{
   isActive?: boolean;
   isEnd?: boolean;
   className?: string;
+  style?: Object;
   btnType?: "button" | "submit" | "reset";
   onClick?: () => any;
 }>;
@@ -24,6 +25,7 @@ export default function MyBtnLink(props: MyBtnLinkType) {
     isDisabled,
     isActive,
     isEnd,
+    style,
   } = props;
 
   return (
@@ -34,12 +36,14 @@ export default function MyBtnLink(props: MyBtnLinkType) {
           type={btnType}
           className={`${className} ${isActive ? "active" : ""}`}
           disabled={isDisabled}
+          style={style}
         >
           {children}
         </button>
       )}
       {UIType === "link" && (
         <a
+          style={style}
           className={`${className} ${isActive ? "active" : ""} ${
             isDisabled ? "disabled" : ""
           }`}
@@ -50,6 +54,7 @@ export default function MyBtnLink(props: MyBtnLinkType) {
       )}
       {UIType === "navlink" && (
         <NavLink
+          style={style}
           className={`${className} ${isDisabled ? "disabled" : ""}`}
           to={href ?? ""}
           end={isEnd}

@@ -31,28 +31,14 @@
       position: relative;
     }
 
-    & .checkbox-btn {
+    & .input-action {
+      margin: 0;
       appearance: none;
       display: flex;
       width: 20px;
       height: 20px;
       border-radius: 4px;
       background-color: checkbox.$bg-base;
-
-      & + .checkbox-icon {
-        display: none;
-      }
-
-      &:checked + .checkbox-icon {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #3f5e72;
-        width: 12px;
-        height: 10px;
-      }
     }
   }
 }

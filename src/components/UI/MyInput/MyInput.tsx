@@ -8,6 +8,7 @@ type MyInputType = Readonly<{
   placeholder?: string;
   onClick?: () => any;
   onChange?: (event: any) => any;
+  isChecked?: boolean;
   isDisabled?: boolean;
   isRequired?: boolean;
 }>;
@@ -25,6 +26,7 @@ export default function MyInput(props: MyInputType) {
     placeholder,
     isDisabled,
     isRequired,
+    isChecked,
   } = props;
 
   return (
@@ -41,6 +43,7 @@ export default function MyInput(props: MyInputType) {
           disabled={isDisabled}
           placeholder={placeholder}
           required={isRequired}
+          checked={isChecked}
         />
         <div className="input-container">{children}</div>
       </div>
