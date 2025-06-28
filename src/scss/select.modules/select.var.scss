@@ -1,98 +1,98 @@
-@use "./../variables.scss" as var;
+// @use "./../variables.scss" as var;
 
-$size-base-mob: 16px;
-$size-primary-mob: 16px;
-$size-secondary-mob: 16px;
+// $size-base-mob: 16px;
+// $size-primary-mob: 16px;
+// $size-secondary-mob: 16px;
 
-$height-base-mob: 20px;
-$height-primary-mob: 20px;
-$height-secondary-mob: 20px;
+// $height-base-mob: 20px;
+// $height-primary-mob: 20px;
+// $height-secondary-mob: 20px;
 
-$size-base-tablet: 16px;
-$size-primary-tablet: 16px;
-$size-secondary-tablet: 16px;
+// $size-base-tablet: 16px;
+// $size-primary-tablet: 16px;
+// $size-secondary-tablet: 16px;
 
-$height-base-tablet: 20px;
-$height-primary-tablet: 20px;
-$height-secondary-tablet: 20px;
+// $height-base-tablet: 20px;
+// $height-primary-tablet: 20px;
+// $height-secondary-tablet: 20px;
 
-$size-base-desktop: 16px;
-$size-primary-desktop: 16px;
-$size-secondary-desktop: 16px;
+// $size-base-desktop: 16px;
+// $size-primary-desktop: 16px;
+// $size-secondary-desktop: 16px;
 
-$height-base-desktop: 20px;
-$height-primary-desktop: 20px;
-$height-secondary-desktop: 20px;
+// $height-base-desktop: 20px;
+// $height-primary-desktop: 20px;
+// $height-secondary-desktop: 20px;
 
-$col-base: rgba(#000000, 0.6);
-$col-base-hover: rgba(#000000, 0.6);
-$col-base-focus: rgba(#000000, 0.6);
-$col-base-active: rgba(#000000, 1);
-$col-base-disabled: rgba(#000000, 0.3);
+// $col-base: rgba(#000000, 0.6);
+// $col-base-hover: rgba(#000000, 0.6);
+// $col-base-focus: rgba(#000000, 0.6);
+// $col-base-active: rgba(#000000, 1);
+// $col-base-disabled: rgba(#000000, 0.3);
 
-$col-primary: rgba(#000000, 0.6);
-$col-primary-hover: rgba(#000000, 0.6);
-$col-primary-focus: rgba(#000000, 0.6);
-$col-primary-active: rgba(#000000, 0.6);
-$col-primary-disabled: rgba(#000000, 0.6);
+// $col-primary: rgba(#000000, 0.6);
+// $col-primary-hover: rgba(#000000, 0.6);
+// $col-primary-focus: rgba(#000000, 0.6);
+// $col-primary-active: rgba(#000000, 0.6);
+// $col-primary-disabled: rgba(#000000, 0.6);
 
-$col-secondary: rgba(#000000, 0.6);
-$col-secondary-hover: rgba(#000000, 0.6);
-$col-secondary-focus: rgba(#000000, 0.6);
-$col-secondary-active: rgba(#000000, 0.6);
-$col-secondary-disabled: rgba(#000000, 0.6);
+// $col-secondary: rgba(#000000, 0.6);
+// $col-secondary-hover: rgba(#000000, 0.6);
+// $col-secondary-focus: rgba(#000000, 0.6);
+// $col-secondary-active: rgba(#000000, 0.6);
+// $col-secondary-disabled: rgba(#000000, 0.6);
 
-$bg-base: #e6e6e6;
-$bg-base-hover: rgba(#000000, 0.6);
-$bg-base-focus: rgba(#000000, 0.6);
-$bg-base-active: rgba(#000000, 0.6);
-$bg-base-disabled: rgba(#000000, 0.6);
+// $bg-base: #e6e6e6;
+// $bg-base-hover: rgba(#000000, 0.6);
+// $bg-base-focus: rgba(#000000, 0.6);
+// $bg-base-active: rgba(#000000, 0.6);
+// $bg-base-disabled: rgba(#000000, 0.6);
 
-$bg-primary: rgba(#000000, 0.6);
-$bg-primary-hover: rgba(#000000, 0.6);
-$bg-primary-focus: rgba(#000000, 0.6);
-$bg-primary-active: rgba(#000000, 0.6);
-$bg-primary-disabled: rgba(#000000, 0.6);
+// $bg-primary: rgba(#000000, 0.6);
+// $bg-primary-hover: rgba(#000000, 0.6);
+// $bg-primary-focus: rgba(#000000, 0.6);
+// $bg-primary-active: rgba(#000000, 0.6);
+// $bg-primary-disabled: rgba(#000000, 0.6);
 
-$bg-secondary: rgba(#000000, 0.6);
-$bg-secondary-hover: rgba(#000000, 0.6);
-$bg-secondary-focus: rgba(#000000, 0.6);
-$bg-secondary-active: rgba(#000000, 0.6);
-$bg-secondary-disabled: rgba(#000000, 0.6);
+// $bg-secondary: rgba(#000000, 0.6);
+// $bg-secondary-hover: rgba(#000000, 0.6);
+// $bg-secondary-focus: rgba(#000000, 0.6);
+// $bg-secondary-active: rgba(#000000, 0.6);
+// $bg-secondary-disabled: rgba(#000000, 0.6);
 
-:root {
-  --select-size--base: #{$size-base-mob};
-  --select-height--base: #{$height-base-mob};
+// :root {
+//   --select-size--base: #{$size-base-mob};
+//   --select-height--base: #{$height-base-mob};
 
-  --select-size--primary: #{$size-primary-mob};
-  --select-height--primary: #{$height-primary-mob};
+//   --select-size--primary: #{$size-primary-mob};
+//   --select-height--primary: #{$height-primary-mob};
 
-  --select-size--secondary: #{$size-secondary-mob};
-  --select-height--secondary: #{$height-secondary-mob};
-}
+//   --select-size--secondary: #{$size-secondary-mob};
+//   --select-height--secondary: #{$height-secondary-mob};
+// }
 
-@media screen and (min-width: var.$tablet-width) {
-  :root {
-    --select-size--base: #{$size-base-tablet};
-    --select-height--base: #{$height-base-tablet};
+// @media screen and (min-width: var.$tablet-width) {
+//   :root {
+//     --select-size--base: #{$size-base-tablet};
+//     --select-height--base: #{$height-base-tablet};
 
-    --select-size--primary: #{$size-primary-tablet};
-    --select-height--primary: #{$height-primary-tablet};
+//     --select-size--primary: #{$size-primary-tablet};
+//     --select-height--primary: #{$height-primary-tablet};
 
-    --select-size--secondary: #{$size-secondary-tablet};
-    --select-height--secondary: #{$height-secondary-tablet};
-  }
-}
+//     --select-size--secondary: #{$size-secondary-tablet};
+//     --select-height--secondary: #{$height-secondary-tablet};
+//   }
+// }
 
-@media screen and (min-width: var.$desktop-width) {
-  :root {
-    --select-size--base: #{$size-base-desktop};
-    --select-height--base: #{$height-base-desktop};
+// @media screen and (min-width: var.$desktop-width) {
+//   :root {
+//     --select-size--base: #{$size-base-desktop};
+//     --select-height--base: #{$height-base-desktop};
 
-    --select-size--primary: #{$size-primary-desktop};
-    --select-height--primary: #{$height-primary-desktop};
+//     --select-size--primary: #{$size-primary-desktop};
+//     --select-height--primary: #{$height-primary-desktop};
 
-    --select-size--secondary: #{$size-secondary-desktop};
-    --select-height--secondary: #{$height-secondary-desktop};
-  }
-}
+//     --select-size--secondary: #{$size-secondary-desktop};
+//     --select-height--secondary: #{$height-secondary-desktop};
+//   }
+// }

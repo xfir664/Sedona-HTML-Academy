@@ -1,0 +1,17 @@
+@use "./MySelect.module.var.scss" as select;
+
+.select {
+  transition: all ease-in-out 0.3s;
+  & .select-action {
+    padding: 10px;
+    color: select.$bg-base;
+    border: none;
+  }
+  &--base {
+    .select-action {
+      padding: 10px;
+      color: select.$bg-base;
+      border: none;
+    }
+  }
+}
